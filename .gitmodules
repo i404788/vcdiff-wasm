@@ -1,0 +1,3 @@
+[submodule "open-vcdiff"]
+	path = open-vcdiff
+	url = ./open-vcdiff/
