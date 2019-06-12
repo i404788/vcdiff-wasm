@@ -13,5 +13,8 @@ emmake make
 #  [-Ox] represents build optimisations (discussed in the next section).
 export CPATH=$PWD/../open-vcdiff/src
 
-emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' ../compat/vcdenc.cc libvcdenc.a libvcdcom.a -o libvcdenc.js
-emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' ../compat/vcddec.cc libvcddec.a libvcdcom.a -o libvcddec.js
+emcc -v -O3 -g0 -s WASM=1 -s MODULARIZE=1 ../compat/vcdenc.cc libvcdenc.a libvcdcom.a -o libvcdenc.js
+emcc -v -O3 -g0 -s WASM=1 -s MODULARIZE=1 ../compat/vcddec.cc libvcddec.a libvcdcom.a -o libvcddec.js
+
+# emcc -v -O3 -g0 -s WASM=0 -s MODULARIZE=1 ../compat/vcdenc.cc libvcdenc.a libvcdcom.a -o libvcdenc.js
+# emcc -v -O3 -g0 -s WASM=0 -s MODULARIZE=1 ../compat/vcddec.cc libvcddec.a libvcdcom.a -o libvcddec.js

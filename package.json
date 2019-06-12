@@ -1,0 +1,8 @@
+{
+  "name": "vcdiff-wasm",
+  "version": "1.0.0",
+  "description": "open-vcdiff compiled to js/wasm",
+  "author": "C2D",
+  "license": "MIT",
+  "private": true
+}
