@@ -1,10 +1,14 @@
 # Regular Usage
 
 ```
-const encoder = require('vcdiff-wasm/encoder')
-const base = Buffer.from('abc')
-const delta = encoder(base, Buffer.from('defabcfhi'))
+async function testvcdiff () {
+    const encoder = await require('vcdiff-wasm/encoder')()
+    const decoder = await require('vcdiff-wasm/decoder')()
 
-const decoder = require('vcdiff-wasm/decoder')
-const target = decoder(base, delta)
+    const delta = encoder(Buffer.from('abc'), Buffer.from('defabcfhi'))
+    console.log(delta)
+
+    const target = decoder(Buffer.from('abc'), delta)
+    console.log(target)
+}
 ```
