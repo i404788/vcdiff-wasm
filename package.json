@@ -1,8 +1,14 @@
 {
   "name": "vcdiff-wasm",
   "version": "1.0.0",
-  "description": "open-vcdiff compiled to js/wasm",
-  "author": "C2D",
+  "author": "Ferris Kwaijtaal <ferrispc@hotmail.com>",
   "license": "MIT",
-  "private": true
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i404788/vcdiff-wasm"
+  },
+  "files": [
+    "lib"
+  ]
 }
