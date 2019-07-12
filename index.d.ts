@@ -1,4 +1,4 @@
-type encoder = (dict: Uint8Array, target: Uint8Array) => Uint8Array
-type decoder = (dict: Uint8Array, delta: Uint8Array) => Uint8Array
+export type Encoder = (dict: Uint8Array, target: Uint8Array) => Uint8Array
+export type Decoder = (dict: Uint8Array, delta: Uint8Array) => Uint8Array
 
-export default function (): Promise<{ encoder: encoder, decoder: decoder }>
+export default function (): Promise<{ encoder: Encoder, decoder: Decoder }>
