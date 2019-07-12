@@ -1,6 +1,6 @@
 {
   "name": "vcdiff-wasm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Ferris Kwaijtaal <ferrispc@hotmail.com>",
   "license": "MIT",
   "main": "index.js",
@@ -9,6 +9,11 @@
     "url": "https://github.com/i404788/vcdiff-wasm"
   },
   "files": [
-    "lib"
+    "lib",
+    "index.d.ts",
+    "encoder.js",
+    "decoder.js",
+    "encoder.d.ts",
+    "decoder.d.ts"
   ]
 }
