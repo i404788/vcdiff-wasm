@@ -1,6 +1,6 @@
 {
   "name": "vcdiff-wasm",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Ferris Kwaijtaal <ferrispc@hotmail.com>",
   "license": "MIT",
   "main": "index.js",
