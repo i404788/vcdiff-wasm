@@ -1,7 +1,7 @@
-#include "common.h"
 #include <emscripten.h>
 #include <google/vcencoder.h>
 #include <string>
+#include "common.h"
 
 int result[3];
 
