@@ -13,8 +13,8 @@ emmake make
 #  [-Ox] represents build optimisations (discussed in the next section).
 export CPATH=$PWD/../open-vcdiff/src
 
-emcc -v -O3 -Os --llvm-lto 1 -s WASM=1 -s INLINING_LIMIT=1 -s ALLOW_MEMORY_GROWTH=1 -s MODULARIZE=1 -s FILESYSTEM=0 ../compat/vcdenc.cc libvcdenc.a libvcdcom.a -o libvcdenc.js
-emcc -v -O3 -Os --llvm-lto 1 -s WASM=1 -s INLINING_LIMIT=1 -s ALLOW_MEMORY_GROWTH=1 -s MODULARIZE=1 -s FILESYSTEM=0 ../compat/vcddec.cc libvcddec.a libvcdcom.a -o libvcddec.js
+emcc -v -O3 -Os --llvm-lto 1 -s ASSERTIONS=1 -s WASM=1 -s INLINING_LIMIT=1 -s ALLOW_MEMORY_GROWTH=1 -s MODULARIZE=1 -s FILESYSTEM=0 ../compat/vcdenc.cc libvcdenc.a libvcdcom.a -o libvcdenc.js
+emcc -v -O3 -Os --llvm-lto 1 -s ASSERTIONS=1 -s WASM=1 -s INLINING_LIMIT=1 -s ALLOW_MEMORY_GROWTH=1 -s MODULARIZE=1 -s FILESYSTEM=0 ../compat/vcddec.cc libvcddec.a libvcdcom.a -o libvcddec.js
 
 # emcc -v -O3 -g0 -s WASM=0 -s MODULARIZE=1 ../compat/vcdenc.cc libvcdenc.a libvcdcom.a -o libvcdenc.js
 # emcc -v -O3 -g0 -s WASM=0 -s MODULARIZE=1 ../compat/vcddec.cc libvcddec.a libvcdcom.a -o libvcddec.js
