@@ -12,7 +12,11 @@ const decoder = (dict, delta) => {
     const resultSize = _decoder.__Z15get_result_sizev();
     const resultView = new Uint8Array(_decoder.HEAP8.buffer, resultPointer, resultSize);
     const result = new Uint8Array(resultView);
+
+    _decoder.__Z14destroy_bufferPh(dict_ptr)
+    _decoder.__Z14destroy_bufferPh(delta_ptr)
     _decoder.__Z4freev();
+
     return result;
 }
 
