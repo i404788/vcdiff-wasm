@@ -12,7 +12,11 @@ const encoder = (dict, target) => {
     const resultSize = _encoder.__Z15get_result_sizev();
     const resultView = new Uint8Array(_encoder.HEAP8.buffer, resultPointer, resultSize);
     const result = new Uint8Array(resultView);
+
+    _encoder.__Z14destroy_bufferPh(dict_ptr)
+    _encoder.__Z14destroy_bufferPh(target_ptr)
     _encoder.__Z4freev();
+
     return result;
 }
 
