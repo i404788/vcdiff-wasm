@@ -1,4 +1,4 @@
 [submodule "open-vcdiff"]
 	path = open-vcdiff
 	url = ./open-vcdiff/
-	url = git://github.com/google/open-vcdiff.git
+	url = https://github.com/google/open-vcdiff.git
